@@ -5,8 +5,8 @@ Vehicle: 2019 Mercedes-Benz Sprinter 3500 chassis (under the 2020 Winnebago View
 ## Status / To-do
 
 - [x] New H8 battery installed
-- [ ] **Install genuine OEM hold-down clamp (906-541-04-00) once it arrives** — currently in transit
-- [ ] Register the new battery (Section 6 — don't skip this)
+- [x] Register the new battery — confirmed working via Ancel BZ700, see Section 6
+- [ ] **Install genuine OEM hold-down clamp (906-541-04-00) once it arrives** — expected Tuesday
 - [ ] **Install House2Start trickle charger** on the Mastervolt Chargemate, under the passenger seat — see [House2Start_Trickle_Charger_Install.md](House2Start_Trickle_Charger_Install.md)
 
 ## Battery spec
@@ -121,7 +121,19 @@ Sprinters from 2008+ with IBS/Start-Stop (including this 2019 chassis) track the
 
 ### Scan tool
 
-See [Sprinter_OBD_Scanner_Review.md](Sprinter_OBD_Scanner_Review.md) for a full tier-by-tier buyer's guide specific to this van's VS30/907 chassis generation (2019+) — compatibility for this generation is inconsistent enough between tools and even between model years (2019 vs. 2020+) that it's worth reading before buying anything. Short version: no budget tool has owner-confirmed *battery registration* (as opposed to just battery testing) on this exact chassis, so either verify directly with the seller in writing, or pay an independent Sprinter shop/dealer a small fee to do just the registration.
+See [Sprinter_OBD_Scanner_Review.md](Sprinter_OBD_Scanner_Review.md) for the full tier-by-tier buyer's guide, and [Ancel_BZ700_Deep_Dive.md](Ancel_BZ700_Deep_Dive.md) for the specific tool used here. **Update: battery registration is now owner-confirmed working on this exact 2019 VS30/907 chassis via the Ancel BZ700** — the doc's earlier caution (no budget tool had confirmed registration, as opposed to just testing) is resolved for this tool/chassis combination.
+
+**Confirmed procedure on the BZ700:**
+
+1. Plug into the 16-pin OBD2 port under the dash, power on.
+2. Let it run Auto-VIN — selecting "Benz" manually first isn't necessary, it finds the Sprinter/VIN on its own.
+3. Note: the **"Battery" option on the main menu is a battery health check/monitor**, not registration — it wants the engine running and just monitors charge/voltage. Skip it for this purpose (though it's useful diagnostic info on its own).
+4. From the menu, go back and select **BMS Reset** instead.
+5. It re-confirms the vehicle (Sprinter, VIN found).
+6. It asks you to confirm the battery has already been replaced — confirm.
+7. Hit OK — this runs the actual reset/registration.
+
+Real-world run took about the same ~2 minutes quoted above. If your tool doesn't show a clear success screen, start the vehicle afterward and confirm Start-Stop behaves normally as a functional check (see Section 7).
 
 ## 7. After the swap
 
