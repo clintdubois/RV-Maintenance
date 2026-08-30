@@ -1,0 +1,26 @@
+# Binary files - exclude from version control
+*.pdf
+*.iso
+*.zip
+*.rar
+*.7z
+*.bak
+
+# Office documents (track .md versions instead)
+# *.docx  # Can optionally track if using track-changes
+# *.pptx
+# *.xlsx
+
+# System and IDE files
+.DS_Store
+.vscode/
+__pycache__/
+.env
+secrets.json
+*.log
+
+# Temporary files
+*.tmp
+*.swp
+*.swo
+*~
