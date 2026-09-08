@@ -1,10 +1,10 @@
 # 2027 Winnebago View (27R) — 12V Fuse/Breaker Panel Location & CZone Digital Switching
 
 **Sources:**
-- [Winnebago_View_2027_Operator_Manual.pdf](Winnebago_View_2027_Operator_Manual.pdf) — Section 7 (Electrical)
-- [Wiring_Diagrams/Wiring_Diagram_12Volt.pdf](Wiring_Diagrams/Wiring_Diagram_12Volt.pdf) (point-to-point 12V wiring, View/Navion 524R2)
-- [Wiring_Diagrams/Body_12V_Wiring_Installation.pdf](Wiring_Diagrams/Body_12V_Wiring_Installation.pdf) (body 12V installation drawing)
-- [Wiring_Diagrams/Wire_Identification_Chart.pdf](Wiring_Diagrams/Wire_Identification_Chart.pdf) (wire color/code legend)
+- [Winnebago_View_2027_Operator_Manual.pdf](../Winnebago_View_2027_Operator_Manual.pdf) — Section 7 (Electrical)
+- [Wiring_Diagrams/Wiring_Diagram_12Volt.pdf](../Wiring_Diagrams/Wiring_Diagram_12Volt.pdf) (point-to-point 12V wiring, View/Navion 524R2)
+- [Wiring_Diagrams/Body_12V_Wiring_Installation.pdf](../Wiring_Diagrams/Body_12V_Wiring_Installation.pdf) (body 12V installation drawing)
+- [Wiring_Diagrams/Wire_Identification_Chart.pdf](../Wiring_Diagrams/Wire_Identification_Chart.pdf) (wire color/code legend)
 
 ## The Question
 

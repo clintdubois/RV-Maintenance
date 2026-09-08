@@ -4,12 +4,14 @@
 
 ## Contents
 
-- [27R_2000W_Inverter_Operation.md](27R_2000W_Inverter_Operation.md) / `.docx` — 2000W inverter/charger operation guide
-- [27R_12V_Fuse_and_Breaker_Panel_Location.md](27R_12V_Fuse_and_Breaker_Panel_Location.md) / `.docx` — 12V fuse/breaker panel location and CZone digital switching system
-- [27R_60W_Draw_Isolation_Checklist.md](27R_60W_Draw_Isolation_Checklist.md) / `.docx` / `.pdf` — step-by-step checklist to isolate a continuous parasitic 12V draw
-- [Winnebago_27R_Negotiation_Playbook.md](Winnebago_27R_Negotiation_Playbook.md) / `.docx`
-- [Winnebago_27R_New_Owner_Orientation.md](Winnebago_27R_New_Owner_Orientation.md) / `.docx`
-- [Winnebago_27R_Operations_Guide.md](Winnebago_27R_Operations_Guide.md) / `.docx`
-- [Winnebago_27R_PDI_Walkthrough_Checklist.md](Winnebago_27R_PDI_Walkthrough_Checklist.md) / `.docx`
+Markdown source files live in [MD/](MD/); `.docx` (and the one `.pdf`) stay here at the top level.
+
+- [MD/27R_2000W_Inverter_Operation.md](MD/27R_2000W_Inverter_Operation.md) / `27R_2000W_Inverter_Operation.docx` — 2000W inverter/charger operation guide
+- [MD/27R_12V_Fuse_and_Breaker_Panel_Location.md](MD/27R_12V_Fuse_and_Breaker_Panel_Location.md) / `27R_12V_Fuse_and_Breaker_Panel_Location.docx` — 12V fuse/breaker panel location and CZone digital switching system
+- [MD/27R_60W_Draw_Isolation_Checklist.md](MD/27R_60W_Draw_Isolation_Checklist.md) / `27R_60W_Draw_Isolation_Checklist.docx` / `.pdf` — step-by-step checklist to isolate a continuous parasitic 12V draw
+- [MD/Winnebago_27R_Negotiation_Playbook.md](MD/Winnebago_27R_Negotiation_Playbook.md) / `Winnebago_27R_Negotiation_Playbook.docx`
+- [MD/Winnebago_27R_New_Owner_Orientation.md](MD/Winnebago_27R_New_Owner_Orientation.md) / `Winnebago_27R_New_Owner_Orientation.docx`
+- [MD/Winnebago_27R_Operations_Guide.md](MD/Winnebago_27R_Operations_Guide.md) / `Winnebago_27R_Operations_Guide.docx`
+- [MD/Winnebago_27R_PDI_Walkthrough_Checklist.md](MD/Winnebago_27R_PDI_Walkthrough_Checklist.md) / `Winnebago_27R_PDI_Walkthrough_Checklist.docx`
 - [Winnebago_View_2027_Operator_Manual.pdf](Winnebago_View_2027_Operator_Manual.pdf) — official Winnebago operator's manual
 - [Wiring_Diagrams/](Wiring_Diagrams/README.md) — official Winnebago wiring diagrams (524R2)

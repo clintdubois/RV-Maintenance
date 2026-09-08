@@ -36,10 +36,10 @@ Active and completed maintenance projects across all vehicles.
 ## Quick Links
 
 ### Winnebago View 2020
-- [Battery Replacement](Winnebago_View_2020/Winnebago_View_2020_Chassis_Battery_Replacement.md)
-- [Electrical Troubleshooting](Winnebago_View_2020/Wiper_Charging_Electrical_Troubleshooting.md)
-- [Charging System Upgrades](Winnebago_View_2020/House2Start_Trickle_Charger_Install.md)
-- [Diagnostic Tools](Winnebago_View_2020/Sprinter_OBD_Scanner_Review.md)
+- [Battery Replacement](Winnebago_View_2020/MD/Winnebago_View_2020_Chassis_Battery_Replacement.md)
+- [Electrical Troubleshooting](Winnebago_View_2020/MD/Wiper_Charging_Electrical_Troubleshooting.md)
+- [Charging System Upgrades](Winnebago_View_2020/MD/House2Start_Trickle_Charger_Install.md)
+- [Diagnostic Tools](Winnebago_View_2020/MD/Sprinter_OBD_Scanner_Review.md)
 
 ### Luna Campervan
 - [How-To Guide](Luna_Campervan/The_How_To_Guide_for_Luna.md)

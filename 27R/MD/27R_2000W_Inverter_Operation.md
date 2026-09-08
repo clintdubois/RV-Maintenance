@@ -1,6 +1,6 @@
 # 2027 Winnebago View (27R) — 2000W Inverter/Charger Operation
 
-**Source:** *2027 Winnebago View Operator's Manual*, Section 7 (Electrical) and Section 4 (Winnebago Connect), pages 7-6 through 7-8 and 4-6 through 4-7. Saved locally as [Winnebago_View_2027_Operator_Manual.pdf](Winnebago_View_2027_Operator_Manual.pdf) in this folder.
+**Source:** *2027 Winnebago View Operator's Manual*, Section 7 (Electrical) and Section 4 (Winnebago Connect), pages 7-6 through 7-8 and 4-6 through 4-7. Saved locally as [Winnebago_View_2027_Operator_Manual.pdf](../Winnebago_View_2027_Operator_Manual.pdf) in the parent folder.
 
 > The manual documents this as a factory option ("If Equipped") shared across View floorplans, including the 27R. It does not name the inverter/charger manufacturer or model number — that detail is only in the inverter manufacturer's own user guide, which should be in the coach's InfoCase (the binder of individual component manuals that ships with the vehicle). Check there before doing anything beyond basic on/off/monitor use (e.g. changing charger profiles, battery type settings).
 
@@ -62,4 +62,4 @@ There is no physical on/off switch for daily use — the inverter is controlled 
 
 - **WinConnect chapter** (Section 4) of the operator's manual — screen navigation and icon reference.
 - **Inverter/charger manufacturer's user guide** in the coach's InfoCase — full explanation of the system, operating instructions, and charging setup/configuration (battery type, charge profiles, etc.) not covered in the Winnebago manual itself.
-- **[Wiring Diagrams](Wiring_Diagrams/README.md)** — official Winnebago wiring diagrams for this coach (View 524R2). For tracing the inverter/battery circuit specifically, start with `Body_12V_Wiring_Installation.pdf`, `Wiring_Diagram_12Volt.pdf`, and the two `Battery_Installation` sheets.
+- **[Wiring Diagrams](../Wiring_Diagrams/README.md)** — official Winnebago wiring diagrams for this coach (View 524R2). For tracing the inverter/battery circuit specifically, start with `Body_12V_Wiring_Installation.pdf`, `Wiring_Diagram_12Volt.pdf`, and the two `Battery_Installation` sheets.

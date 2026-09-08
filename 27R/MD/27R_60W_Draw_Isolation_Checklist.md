@@ -66,7 +66,7 @@ With every item in Part 1 confirmed off (master House/Coach Battery Disconnect s
 3. If nothing so far explains it, this points toward either:
    - A fault in one of the CZone/RV-C modules (e.g., a relay stuck closed, keeping something energized that should be off), or
    - A wiring short or chafe point somewhere in the coach harness.
-4. At this point, use the [Wire Identification Chart](Wiring_Diagrams/Wire_Identification_Chart.pdf) and [wiring diagrams](Wiring_Diagrams/README.md) to trace individual circuit codes with a multimeter/clamp meter, or contact a dealer/mobile RV electrician — a persistent draw that survives every user-accessible off switch usually means a component-level fault rather than something you can toggle away.
+4. At this point, use the [Wire Identification Chart](../Wiring_Diagrams/Wire_Identification_Chart.pdf) and [wiring diagrams](../Wiring_Diagrams/README.md) to trace individual circuit codes with a multimeter/clamp meter, or contact a dealer/mobile RV electrician — a persistent draw that survives every user-accessible off switch usually means a component-level fault rather than something you can toggle away.
 
 ---
 

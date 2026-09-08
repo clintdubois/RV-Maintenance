@@ -10,18 +10,25 @@ Documentation and maintenance records for the Winnebago View 2020 motorhome, inc
 
 ## Documentation
 
+Markdown source files live in `MD/` subfolders (e.g. `MD/`, `Fridge/MD/`); `.docx` files stay alongside the other content at each folder's top level.
+
 ### Battery & Electrical Systems
-- [Chassis Battery Replacement](Winnebago_View_2020_Chassis_Battery_Replacement.md) - Procedures for replacing the main chassis battery
-- [Electrical Troubleshooting](Wiper_Charging_Electrical_Troubleshooting.md) - Diagnosing and resolving electrical gremlins, wiper issues, and charging problems
+- [Chassis Battery Replacement](MD/Winnebago_View_2020_Chassis_Battery_Replacement.md) - Procedures for replacing the main chassis battery
+- [Electrical Troubleshooting](MD/Wiper_Charging_Electrical_Troubleshooting.md) - Diagnosing and resolving electrical gremlins, wiper issues, and charging problems
 
 ### Charging System Upgrades
-- [Trickle Charger Installation](House2Start_Trickle_Charger_Install.md) - Installing House2Start smart charging system for house battery management while parked
+- [Trickle Charger Installation](MD/House2Start_Trickle_Charger_Install.md) - Installing House2Start smart charging system for house battery management while parked
 
 ### Diagnostics & Tools
-- [OBD Scanner Review](Sprinter_OBD_Scanner_Review.md) - Review of Ancel BZ700 diagnostic scanner and how to use it for engine diagnostics
+- [OBD Scanner Review](MD/Sprinter_OBD_Scanner_Review.md) - Review of Ancel BZ700 diagnostic scanner and how to use it for engine diagnostics
 
 ### Scanner & Diagnostics Tools
-- [Ancel BZ700 Deep Dive](Ancel_BZ700_Deep_Dive.md) - Detailed guide to the Ancel BZ700 OBD-II scanner features and usage
+- [Ancel BZ700 Deep Dive](MD/Ancel_BZ700_Deep_Dive.md) - Detailed guide to the Ancel BZ700 OBD-II scanner features and usage
+
+### Appliances
+- [Fridge: DMC4101 Model, Specs & Purchase Record](Fridge/MD/DMC4101_Model_Specs_Purchase.md) - Nameplate specs (model, ratings, refrigerant) transcribed from the installed unit, plus Amazon purchase record (7/30/2023, $1,600)
+- [Fridge: DMC4101 Not Cooling Below ~13V](Fridge/MD/DMC4101_Not_Cooling_Voltage_Drop.md) - Research on the Dometic DMC4101 warming up when voltage drops below ~13V (wiring/voltage-drop vs. sag-under-load), plus other commonly reported cooling issues
+- [Fridge: DMC4101 Manuals](Fridge/MD/DMC4101_Manuals.md) - Combined install/operation manual (local PDF copy saved) and notes on what documentation Dometic does/doesn't publish for this model
 
 ## Recent Maintenance
 
