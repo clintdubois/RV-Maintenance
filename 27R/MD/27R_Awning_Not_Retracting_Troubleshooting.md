@@ -88,9 +88,29 @@ Work through in order — each step narrows down whether this is a control probl
 
 ---
 
-## Part 4 — When to Stop and Call for Help
+## Part 4 — Manual Retraction — Confirmed Gap in This Coach's Documentation
 
-If the awning has a manual crank or mechanical override for motor failure, that procedure lives in the awning manufacturer's guide in the InfoCase, not in the coach's base operator's manual — check there before attempting any manual retraction you're not sure about.
+Checked specifically: the operator's manual documents a manual/crank override for other powered components — the Power Roof Ventilator has a documented "Dome Crank knob" for use during a power failure, for example — but it has **no manual-retract or crank procedure for the awning anywhere in the manual or the wiring diagrams**. It only defers to "the Awning manufacturer's user guide provided in your InfoCase."
+
+**Why there's no generic set of steps to give here:** manual-override mechanisms differ significantly by awning brand and model, and guessing wrong risks real damage or injury:
+
+• Bluetooth-controlled awnings (Girard-style) often have **no crank at all** — releasing them manually means removing the motor housing and turning the drive shaft directly with a hex key/socket.
+
+• Others (Solera, Carefree, Dometic) commonly have a small crank port or a manual-release lever built into the motor end.
+
+• Some newer powered-only designs have **no field-serviceable manual override** and require a technician.
+
+**Two ways to get the actual procedure for this awning:**
+
+**1.** Check the InfoCase for the awning's own manufacturer's manual — it should be filed there separately from the coach operator's manual.
+
+**2.** Look for a brand/model sticker on the motor housing (the tube-shaped part at the roof line where the arms pivot) and look up that model's manual override procedure directly, or provide the brand/model for a model-specific lookup.
+
+**If it's currently stuck extended:** don't force the mechanism, and don't drive with it out. If wind or weather is a factor before you can resolve it, treat it as urgent — Winnebago roadside assistance or the nearest dealer is the safer path than improvising a release.
+
+---
+
+## Part 5 — When to Stop and Call for Help
 
 A confirmed mechanical bind, a bent arm, or a motor that hums but won't move under load is a job for a dealer or RV service center — continuing to operate a jammed awning risks turning a repair into a full replacement.
 
