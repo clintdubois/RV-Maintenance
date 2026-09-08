@@ -4,7 +4,7 @@
 
 The powered patio awning won't retract. Before assuming a motor or mechanical failure, work through the control paths and the coach-specific interlock first — they're the most common source of a "won't respond" complaint.
 
-**What you need:** WinConnect touchscreen, phone with the awning's Bluetooth app (if paired), flashlight, a second person to watch the mechanism while you operate the switch.
+**What you need:** WinConnect touchscreen, phone with the awning's Bluetooth app (if paired), flashlight, Phillips screwdriver and a 13mm wrench (for manual retraction), a second person to watch the mechanism while you operate the switch.
 
 *Pinch hazard — keep hands, pets, and objects clear of the arms and fabric any time you operate the awning, including during testing.*
 
@@ -16,7 +16,7 @@ Per our own Operations Guide and PDI checklist for this coach: this is a **power
 
 On WinConnect: the Awning screen is reached from the menu icon. Each time you open it, you must read and accept the Awning safety page ("I understand") before the retract/extend/LED controls appear.
 
-The base operator's manual does not name the awning's manufacturer and has no dedicated troubleshooting section for it — it defers to "the Awning manufacturer's user guide provided in your InfoCase" for complete operating instructions, features, and maintenance care. Check there for anything beyond what's covered here, including any manual crank/override procedure in case of a motor failure.
+The base operator's manual does not name the awning's manufacturer and has no dedicated troubleshooting section for it — it defers to "the Awning manufacturer's user guide provided in your InfoCase" for complete operating instructions. **Confirmed from the nameplate on the awning box:** this is a **Girard GG750** (Lippert brand), 16' x 8' patio awning, 12VDC, motion-sensor-equipped. That identification is what makes Parts 3 and 4 below model-specific rather than generic.
 
 **Ignition Lockout System** (documented in Section 13 of the operator's manual): the ignition lockout system disables the awning's extend function and retracts the awning when triggered. In other words, this coach is designed to force the awning closed around the vehicle's ignition state as a driving-safety measure — it isn't something that should ever *prevent* a retract. If the awning won't retract even with the ignition confirmed off, this system is not your cause; move on to Part 2.
 
@@ -70,6 +70,7 @@ Work through in order — each step narrows down whether this is a control probl
 
 - Open the WinConnect notification bell for any fault related to the awning, its sensor, or the RV-C/CZone network generally.
 - Check the Coach 12V Panel (passenger-side compartment, under/near the passenger seat) for anything visibly tripped or abnormal — see the 12V Fuse and Breaker Panel Location guide for what's normally in there.
+- Per Girard's own official troubleshooting for this exact model: also check the panel fuse on the 12VDC circuit feeding the awning, and check for a dedicated "Awnings Power Main Switch" if this coach has one — both are named directly in the manufacturer's guide as the first things to check for a motor that won't operate at all.
 
 *Why this matters:* A silent motor with no response on any control path points at the power/control side, and these are the two places most likely to show it.
 
@@ -88,25 +89,44 @@ Work through in order — each step narrows down whether this is a control probl
 
 ---
 
-## Part 4 — Manual Retraction — Confirmed Gap in This Coach's Documentation
+## Part 4 — Manual Retraction — Verified Girard GG750 Procedure
 
-Checked specifically: the operator's manual documents a manual/crank override for other powered components — the Power Roof Ventilator has a documented "Dome Crank knob" for use during a power failure, for example — but it has **no manual-retract or crank procedure for the awning anywhere in the manual or the wiring diagrams**. It only defers to "the Awning manufacturer's user guide provided in your InfoCase."
+The coach's own operator's manual has no crank/override procedure for the awning — this comes directly from Girard's official GG750 Installation, Service and Repair Manual.
 
-**Why there's no generic set of steps to give here:** manual-override mechanisms differ significantly by awning brand and model, and guessing wrong risks real damage or injury:
+### ☐ 1. Know the limitation before you start — **IMPORTANT**
 
-• Bluetooth-controlled awnings (Girard-style) often have **no crank at all** — releasing them manually means removing the motor housing and turning the drive shaft directly with a hex key/socket.
+- The GG750's manual override is **one-way: it can only close (retract) the awning, not extend it.**
+- The procedure differs by which side the motor is on — the manual shows a right-hand motor version; if this coach has a left-hand version, the override is on the opposite endcap from what's pictured.
 
-• Others (Solera, Carefree, Dometic) commonly have a small crank port or a manual-release lever built into the motor end.
+*Why this matters:* Knowing it's retract-only and side-dependent up front avoids wasted effort looking for an extend override that doesn't exist, or opening the wrong end cap.
 
-• Some newer powered-only designs have **no field-serviceable manual override** and require a technician.
+### ☐ 2. Remove the end cap opposite the motor
 
-**Two ways to get the actual procedure for this awning:**
+- Remove the 3 Phillips-head screws holding on the end cap on the side **opposite** the motor.
 
-**1.** Check the InfoCase for the awning's own manufacturer's manual — it should be filed there separately from the coach operator's manual.
+*Why this matters:* The override shaft is accessed from the non-motor end, not the motor end itself.
 
-**2.** Look for a brand/model sticker on the motor housing (the tube-shaped part at the roof line where the arms pivot) and look up that model's manual override procedure directly, or provide the brand/model for a model-specific lookup.
+### ☐ 3. Turn the manual override shaft closed with a 13mm wrench
 
-**If it's currently stuck extended:** don't force the mechanism, and don't drive with it out. If wind or weather is a factor before you can resolve it, treat it as urgent — Winnebago roadside assistance or the nearest dealer is the safer path than improvising a release.
+- Using a 13mm wrench on the exposed override shaft, turn it to close the awning (per Girard's Figure 10 in the official manual).
+
+*Why this matters:* This is the verified, manufacturer-documented method for this exact model — not a generic RV-awning workaround.
+
+---
+
+##  — 
+
+**If the motor won't operate at all** (the original symptom), Girard's own troubleshooting guide for this model says to check these two things before anything else, and gives a direct support line if they don't resolve it:
+
+**1.** Check that the panel fuse on the 12VDC circuit is good.
+
+**2.** If the coach has an "Awnings Power Main Switch," confirm it's in the ON position.
+
+**3.** If that doesn't solve it, call the Girard Systems service line directly: **(949) 259-4000** or toll-free **(800) 382-8442**.
+
+**Duty cycle warning from the manual:** to prevent motor overheating, don't exceed 4 minutes of continuous operation per hour — if you're testing repeatedly while troubleshooting, give the motor a rest between attempts rather than running it back-to-back.
+
+Full source: **Girard GG750 Awning Installation, Service and Repair Manual** (Rev. 01/22/2020), saved locally as [Girard_GG750_Awning_Manual.pdf](../Girard_GG750_Awning_Manual.pdf), confirmed against the nameplate photographed on this coach's awning box ([Girard_GG750_Awning_Nameplate.JPG](../Girard_GG750_Awning_Nameplate.JPG)).
 
 ---
 
@@ -118,4 +138,4 @@ If none of the three control paths get any response and the Coach 12V Panel look
 
 ---
 
-*Companion documents: 27R_12V_Fuse_and_Breaker_Panel_Location.md/.docx (Coach 12V Panel and the CZone digital switching system) | Wiring_Diagrams/README.md (full diagram index, including the awning's connector detail in Wiring_Diagram_12Volt.pdf and Body_12V_Wiring_Installation.pdf)*
+*Companion documents: 27R_12V_Fuse_and_Breaker_Panel_Location.md/.docx (Coach 12V Panel and the CZone digital switching system) | Wiring_Diagrams/README.md (full diagram index, including the awning's connector detail in Wiring_Diagram_12Volt.pdf and Body_12V_Wiring_Installation.pdf) | Girard_GG750_Awning_Manual.pdf (official manufacturer manual, saved locally in this folder)*
