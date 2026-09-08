@@ -1,0 +1,91 @@
+slug: 27R_60W_Draw_Isolation_Checklist
+
+vehicle_kicker: "2027 WINNEBAGO VIEW  •  27R"
+title: "Isolating a Continuous 60W Parasitic Draw"
+title_lines:
+  - "Isolating a Continuous 60W"
+  - "Parasitic Draw"
+subtitle: "Step-by-step checklist — confirm every switch is really off, then isolate what's left."
+running_title: "27R — 60W Parasitic Draw Isolation Checklist"
+footer_left: "RV-Maintenance / 27R"
+
+lead: "Start with every switch believed OFF. This checklist confirms that's actually true, then reads the true baseline and isolates further if the draw remains."
+you_need:
+  - "WinConnect touchscreen (Energy Management screen)"
+  - "passenger-side compartment access"
+  - "water heater exterior access panel"
+  - "entry/galley walk-through"
+callout: "Several items below have a physical switch **and** a separate software toggle that can disagree with each other — that mismatch is the most common cause of an unexplained draw."
+
+parts:
+  - kind: steps
+    kicker: "PART 1"
+    heading: "Confirm Everything Is Actually Off"
+    subheading: "Work through in order — each item lists both the physical check and the software confirmation."
+    steps:
+      - title: "Shore power and generator disconnected"
+        details:
+          - "Shoreline power cord fully unplugged and coiled back into its compartment (driver's side)."
+          - "Generator confirmed OFF (WinConnect generator screen, plus listen/check for exhaust)."
+        why: "If shore power or the generator is live, you're not reading a true battery drain."
+      - title: "Inverter/charger disconnect switch"
+        tag: "TOP SUSPECT"
+        warn: true
+        details:
+          - "Physical switch (passenger-side compartment, near the inverter/charger unit) is OFF."
+          - "WinConnect → Energy Management screen also shows the inverter OFF (not just “on but inactive”)."
+        why: "This switch is separate from the software toggle. Left on while the app shows “off,” the inverter's standby electronics can keep drawing power — plausibly the full 60W by itself."
+      - title: "Water heater"
+        details:
+          - "Physical switch behind the exterior access panel is OFF (green indicator light off)."
+          - "WinConnect → Water Systems screen confirms OFF — not just Economy mode (which still cycles the recirculation pump)."
+      - title: "Tank heating pads"
+        details:
+          - "WinConnect → Water Systems screen — pad toggle(s) confirmed off."
+        why: "Thermostatically controlled — can silently re-engage in cold weather."
+      - title: "Refrigerator"
+        details:
+          - "Control panel/thermostat fully OFF (not just turned down to “1” — that's still running)."
+          - "WinConnect Home screen (if it shows fridge status) agrees."
+        why: "This is a 12V DC compressor refrigerator — draws directly off the house battery."
+      - title: "Winegard router / WiFi booster"
+        details:
+          - "Dedicated power switch (separate from interior light switches) confirmed off."
+        why: "Exact location isn't specified in the manual — check near the Winegard antenna control panel."
+      - title: "Interior lights and 12V accessories"
+        details:
+          - "Walked the length of the coach — no interior/reading/accent lights lit."
+          - "Any actively-charging USB devices unplugged from 12V USB outlets."
+    note:
+      heading: "Expected residual load — don't chase these"
+      body:
+        - "**Propane gas leak detector & CO detector** — always powered by design; should be well under 1–2W combined."
+        - "**CZone/RV-C control modules** (main switching module, coach management, Truma interface, lighting controller, solar charge controller) — stay powered whenever the master battery switch is on. Normal combined standby should be low single-digit watts."
+
+  - kind: text
+    kicker: "PART 2"
+    heading: "Read the True Baseline"
+    body:
+      - "With every Part 1 item confirmed off (master House/Coach Battery Disconnect switch still ON — you need this to read anything):"
+      - "**1.** Open WinConnect → Energy Management screen."
+      - "**2.** Read the **Usage** value — this is your true “everything off” baseline."
+    table:
+      headers: ["Reading", "What it means"]
+      rows:
+        - status: good
+          cells: ["Near 0W", "Found it — whichever item in Part 1 was actually still live (most likely the inverter disconnect switch mismatch) was the cause."]
+        - status: warn
+          cells: ["Still ~60W", "The draw is coming from something not covered by a normal user-facing switch — continue to Part 3."]
+
+  - kind: text
+    kicker: "PART 3"
+    heading: "If the Draw Persists: Further Isolation"
+    body:
+      - "**1.** Re-confirm each Part 1 item once more — double-check the inverter disconnect switch especially."
+      - "**2.** Inspect the Coach 12V Panel (passenger-side compartment) for any breaker/fuse that looks tripped, warm, or abnormal. Do **not** pull the Coach Batt Fuse or Chassis Batt Fuse to “test” — that kills power to the monitor you're trying to read."
+      - "**3.** If nothing explains it: likely a stuck relay in a CZone/RV-C module, or a wiring short/chafe point."
+      - "**4.** Use the Wire Identification Chart and wiring diagrams to trace circuits with a multimeter/clamp meter, or contact a dealer/mobile RV electrician — a draw surviving every user-accessible off switch usually means a component-level fault."
+
+companions:
+  - "27R_12V_Fuse_and_Breaker_Panel_Location.md/.docx (Coach 12V Panel contents and the CZone digital switching system)"
+  - "27R_2000W_Inverter_Operation.md/.docx (inverter operation and disconnect switch location)"
