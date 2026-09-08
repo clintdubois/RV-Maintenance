@@ -5,6 +5,7 @@
 ## Contents
 
 - [27R_2000W_Inverter_Operation.md](27R_2000W_Inverter_Operation.md) / `.docx` — 2000W inverter/charger operation guide
+- [27R_12V_Fuse_and_Breaker_Panel_Location.md](27R_12V_Fuse_and_Breaker_Panel_Location.md) / `.docx` — 12V fuse/breaker panel location and CZone digital switching system
 - [Winnebago_27R_Negotiation_Playbook.md](Winnebago_27R_Negotiation_Playbook.md) / `.docx`
 - [Winnebago_27R_New_Owner_Orientation.md](Winnebago_27R_New_Owner_Orientation.md) / `.docx`
 - [Winnebago_27R_Operations_Guide.md](Winnebago_27R_Operations_Guide.md) / `.docx`
