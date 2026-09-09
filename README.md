@@ -4,12 +4,20 @@ Comprehensive maintenance, repair, and system documentation for RV vehicles and 
 
 ## Repository Structure
 
-### Winnebago_View_2020/
-Documentation and maintenance logs for the Winnebago View 2020 motorhome.
+### Winnebago_View_2020D/
+Documentation and maintenance logs for the Winnebago View 2020 (24D floorplan) motorhome.
 - Battery replacement procedures
 - Electrical system troubleshooting
 - Charging system upgrades
 - OBD scanner diagnostics
+
+### Winnebago_View_2027R/
+Documentation and troubleshooting guides for the Winnebago View 2027 (24R floorplan, referred to
+locally as "27R" — see the naming note in that folder's README).
+- Inverter, 12V fuse/breaker panel, and CZone digital switching system
+- Troubleshooting guides (parasitic draw, gray tank sensor, awning) built with the reusable
+  `scripts/troubleshooting_doc.py` template
+- Wiring diagrams and operator's/component manuals
 
 ### Luna_Campervan/
 Documentation and resources for Luna the campervan.
@@ -35,11 +43,18 @@ Active and completed maintenance projects across all vehicles.
 
 ## Quick Links
 
-### Winnebago View 2020
-- [Battery Replacement](Winnebago_View_2020/MD/Winnebago_View_2020_Chassis_Battery_Replacement.md)
-- [Electrical Troubleshooting](Winnebago_View_2020/MD/Wiper_Charging_Electrical_Troubleshooting.md)
-- [Charging System Upgrades](Winnebago_View_2020/MD/House2Start_Trickle_Charger_Install.md)
-- [Diagnostic Tools](Winnebago_View_2020/MD/Sprinter_OBD_Scanner_Review.md)
+### Winnebago View 2020D
+- [Battery Replacement](Winnebago_View_2020D/MD/Winnebago_View_2020_Chassis_Battery_Replacement.md)
+- [Electrical Troubleshooting](Winnebago_View_2020D/MD/Wiper_Charging_Electrical_Troubleshooting.md)
+- [Charging System Upgrades](Winnebago_View_2020D/MD/House2Start_Trickle_Charger_Install.md)
+- [Diagnostic Tools](Winnebago_View_2020D/MD/Sprinter_OBD_Scanner_Review.md)
+
+### Winnebago View 2027R
+- [Inverter Operation](Winnebago_View_2027R/MD/27R_2000W_Inverter_Operation.md)
+- [12V Fuse/Breaker Panel Location](Winnebago_View_2027R/MD/27R_12V_Fuse_and_Breaker_Panel_Location.md)
+- [60W Parasitic Draw Isolation](Winnebago_View_2027R/MD/27R_60W_Draw_Isolation_Checklist.md)
+- [Gray Tank 0% Troubleshooting](Winnebago_View_2027R/MD/27R_Gray_Tank_0_Percent_Troubleshooting.md)
+- [Awning Not Retracting Troubleshooting](Winnebago_View_2027R/MD/27R_Awning_Not_Retracting_Troubleshooting.md)
 
 ### Luna Campervan
 - [How-To Guide](Luna_Campervan/The_How_To_Guide_for_Luna.md)

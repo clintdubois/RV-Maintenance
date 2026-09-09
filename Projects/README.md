@@ -52,7 +52,7 @@ Each project should include:
 ## Cross-Reference
 
 Projects often relate to:
-- Vehicle-specific folders (Winnebago_View_2020/, Luna_Campervan/)
+- Vehicle-specific folders (Winnebago_View_2020D/, Winnebago_View_2027R/, Luna_Campervan/)
 - System documentation (Systems/ folder)
 - Specific how-to guides in vehicle directories
 

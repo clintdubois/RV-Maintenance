@@ -1,6 +1,6 @@
-# 27R — Winnebago View, 2027 model year, 24R floorplan
+# Winnebago_View_2027R — Winnebago View, 2027 model year, 24R floorplan
 
-**Naming note:** The coach's actual floorplan code is **24R** (per Winnebago's own model designations, e.g. "524R2"). Since every document in this folder is about the 2027 model year, the "24" year-adjacent digit is redundant here — we refer to this vehicle simply as **"27R"** throughout (folder name, file prefixes, and body text) rather than writing out "2027 24R" every time. If you ever cross-reference Winnebago's official model/parts docs, look for **24R** or **524R2**, not "27R" — that string is local shorthand only and won't appear in manufacturer documentation.
+**Naming note:** The coach's actual floorplan code is **24R** (per Winnebago's own model designations, e.g. "524R2"). Since every document in this folder is about the 2027 model year, the "24" year-adjacent digit is redundant here — we refer to this vehicle simply as **"27R"** in file prefixes and body text (e.g. `27R_2000W_Inverter_Operation.md`) rather than writing out "2027 24R" every time. The folder itself is named `Winnebago_View_2027R` to match the sibling `Winnebago_View_2020D` folder's vehicle+year+floorplan convention. If you ever cross-reference Winnebago's official model/parts docs, look for **24R** or **524R2**, not "27R" — that string is local shorthand only and won't appear in manufacturer documentation.
 
 ## Contents
 

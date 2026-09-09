@@ -1,10 +1,10 @@
-# Winnebago View 2020 Maintenance
+# Winnebago View 2020D Maintenance
 
-Documentation and maintenance records for the Winnebago View 2020 motorhome, including battery systems, electrical diagnostics, charging solutions, and appliance management.
+Documentation and maintenance records for the Winnebago View 2020 (24D floorplan) motorhome, including battery systems, electrical diagnostics, charging solutions, and appliance management. Folder named `Winnebago_View_2020D` to match the sibling `Winnebago_View_2027R` folder's vehicle+year+floorplan convention.
 
 ## Vehicle Overview
 
-**Make/Model:** Winnebago View 2020
+**Make/Model:** Winnebago View 2020, 24D floorplan
 **Chassis:** Sprinter (Mercedes-Benz)
 **Status:** Active
 

@@ -53,4 +53,4 @@ Reference materials are organized by system type. Each document should provide:
 - Maintenance schedules
 - Parts and specifications
 
-For vehicle-specific applications, see the main RV directories (Winnebago_View_2020/, Luna_Campervan/, etc.).
+For vehicle-specific applications, see the main RV directories (Winnebago_View_2020D/, Winnebago_View_2027R/, Luna_Campervan/, etc.).
