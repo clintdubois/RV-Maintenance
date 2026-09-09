@@ -27,7 +27,7 @@ Markdown source files live in `MD/` subfolders (e.g. `MD/`, `Fridge/MD/`); `.doc
 
 ### Appliances
 - [Fridge: DMC4101 Model, Specs & Purchase Record](Fridge/MD/DMC4101_Model_Specs_Purchase.md) - Nameplate specs (model, ratings, refrigerant) transcribed from the installed unit, plus Amazon purchase record (7/30/2023, $1,600)
-- [Fridge: DMC4101 Not Cooling Below ~13V](Fridge/MD/DMC4101_Not_Cooling_Voltage_Drop.md) - Research on the Dometic DMC4101 warming up when voltage drops below ~13V (wiring/voltage-drop vs. sag-under-load), plus other commonly reported cooling issues
+- [Fridge: DMC4101 Not Cooling Below ~13V](Fridge/MD/DMC4101_Not_Cooling_Voltage_Drop.md) / `Fridge/DMC4101_Not_Cooling_Voltage_Drop.docx` / `.pdf` - Dometic DMC4101 warming below ~13V (wiring/voltage-drop vs. sag-under-load), plus other commonly reported cooling issues. Generated from [Fridge/MD/DMC4101_Not_Cooling_Voltage_Drop.yaml](Fridge/MD/DMC4101_Not_Cooling_Voltage_Drop.yaml) via `scripts/troubleshooting_doc.py` — edit the YAML, not the `.md`, for future changes. Published to WayfinderNorthwest.
 - [Fridge: DMC4101 Manuals](Fridge/MD/DMC4101_Manuals.md) - Combined install/operation manual (local PDF copy saved) and notes on what documentation Dometic does/doesn't publish for this model
 
 ## Recent Maintenance
