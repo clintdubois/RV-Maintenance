@@ -63,10 +63,19 @@ Work through in order — each step narrows down whether this is a control probl
 
 - No sound at all from the awning motor area → suspect power, ground, a blown fuse/tripped breaker, or the Electronics Kit-Awning module itself.
 - A motor hum or strain sound with no arm movement → suspect a mechanical bind, not electrical.
+- It moves a short distance (roughly 10-12 inches) and then stops → this is a specific, documented symptom — go to the next step before assuming a mechanical or motor fault.
 
 *Why this matters:* This is the fastest way to split "electrical/control problem" from "mechanical problem" without opening anything up.
 
-### ☐ 4. If it's silent: check WinConnect notifications and the Coach 12V Panel
+### ☐ 4. If it moves partway then stops: check house battery voltage — possible, not yet confirmed — **CHECK THIS**
+
+- Girard's own troubleshooting guide for the GG750 documents this exact symptom: "The motor will operate for 10-12" and then stop... The motor may not be receiving enough power to operate correctly... Check to ensure that you have a minimum of 12VDC at the motor connection, if not switch on your generator or connect to shore power."
+- Check house battery voltage on WinConnect. This coach's lithium battery documentation lists a normal resting/float voltage of about 13.6V — if the reading is noticeably below that (e.g. ~13.2V), there may not be enough headroom left once the motor's current draw (up to 10A) pulls the voltage down further under load, especially over the wire run to a roof-mounted motor.
+- **Start the generator (or plug into shore power) and let it run for about 5 minutes to actually begin charging**, then retry retracting from the panel. This is a real fix Girard documents for this symptom, not a workaround — try it before escalating to Part 5.
+
+*Why this matters:* This isn't confirmed as the cause on this coach yet — but it's a specific, documented match for the exact symptom (partial movement then stall), it's non-invasive, and it takes 5 minutes to rule in or out before opening anything up mechanically.
+
+### ☐ 5. If it's silent: check WinConnect notifications and the Coach 12V Panel
 
 - Open the WinConnect notification bell for any fault related to the awning, its sensor, or the RV-C/CZone network generally.
 - Check the Coach 12V Panel (passenger-side compartment, under/near the passenger seat) for anything visibly tripped or abnormal — see the 12V Fuse and Breaker Panel Location guide for what's normally in there.
@@ -74,14 +83,14 @@ Work through in order — each step narrows down whether this is a control probl
 
 *Why this matters:* A silent motor with no response on any control path points at the power/control side, and these are the two places most likely to show it.
 
-### ☐ 5. If it hums but doesn't move: inspect for a mechanical bind before forcing anything
+### ☐ 6. If it hums but doesn't move: inspect for a mechanical bind before forcing anything
 
 - Check both arms and the roller tube for visible obstruction, debris, a bent arm, or fabric caught on something.
 - Do not force the mechanism or keep holding the switch against a bind — that risks burning out the motor or bending an arm.
 
 *Why this matters:* A strained-but-non-moving motor almost always means something physical is stopping it, not an electrical fault — forcing it turns a simple fix into an expensive one.
 
-### ☐ 6. If a notification points at the motion/wind sensor specifically
+### ☐ 7. If a notification points at the motion/wind sensor specifically
 
 - Inspect the sensor's own 2-wire connection for damage, corrosion, or a loose pin, separately from the motor wiring — it's a distinct circuit, not part of the motor pair.
 
