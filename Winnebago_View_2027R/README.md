@@ -15,6 +15,7 @@ Markdown source files live in [MD/](MD/); `.docx` (and the one `.pdf`) stay here
 - [MD/Winnebago_27R_New_Owner_Orientation.md](MD/Winnebago_27R_New_Owner_Orientation.md) / `Winnebago_27R_New_Owner_Orientation.docx`
 - [MD/Winnebago_27R_Operations_Guide.md](MD/Winnebago_27R_Operations_Guide.md) / `Winnebago_27R_Operations_Guide.docx`
 - [MD/Winnebago_27R_PDI_Walkthrough_Checklist.md](MD/Winnebago_27R_PDI_Walkthrough_Checklist.md) / `Winnebago_27R_PDI_Walkthrough_Checklist.docx`
+- [MD/27R_Rear_Suspension_Upgrade_Reference.md](MD/27R_Rear_Suspension_Upgrade_Reference.md) / `27R_Rear_Suspension_Upgrade_Reference.docx` — Hellwig 7777 sway bar + Agile Fox 2.5 rear shocks, sourced from another owner's Facebook report plus manufacturer part research; open question on Agile's 4500-chassis fitment flagged for follow-up
 - [Winnebago_View_2027_Operator_Manual.pdf](Winnebago_View_2027_Operator_Manual.pdf) — official Winnebago operator's manual
 - [Girard_GG750_Awning_Manual.pdf](Girard_GG750_Awning_Manual.pdf) — official Girard GG750 patio awning installation/service/repair manual (the coach's own manual doesn't name the awning brand; this was identified from the nameplate)
 - [Girard_GG750_Awning_Nameplate.JPG](Girard_GG750_Awning_Nameplate.JPG) — photo of the awning's nameplate confirming model/brand
