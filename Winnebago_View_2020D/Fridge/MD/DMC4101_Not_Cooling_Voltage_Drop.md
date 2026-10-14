@@ -97,6 +97,47 @@ Not yet confirmed as the cause on this coach, but commonly reported for this mod
 
 ---
 
+## Part 6 — Permanent Fix: DC-DC Power Conditioner
+
+Rewiring (Part 4) only reduces voltage drop — it can't fix genuine battery sag under load. A **DC-DC buck-boost regulator**, wired between the battery and the fridge, fixes both causes at once: it actively holds its output at a fixed voltage (e.g. **13.5V**) regardless of what the input side is doing — sag under compressor load, resting voltage drift, or upstream wiring drop. Tradeoff: added cost/complexity and a few percent efficiency loss versus a straight wire.
+
+**Given this coach already runs a SmartBMV, SmartSolar, and Cerbo GX, the Victron Orion XS is the right pick over the older Orion-Tr Smart** — the Orion-Tr Smart only has Bluetooth (an island device with its own separate app), while the Orion XS has an actual **VE.Direct port** that joins the existing Cerbo/VRM dashboard (confirmed: Venus OS v3.30+ supports Orion XS via VE.Direct).
+
+**Setup**: in the VictronConnect app, set Function to **Power Supply mode** (not Charger mode) and set the output voltage to 13.5V. Power Supply mode is a genuinely different algorithm from charging — per Victron's own manual: "the output voltage remains stable regardless of the applied load or fluctuating input voltage... thanks to the automatic buck-boost control. This control also guarantees that the current will never exceed the set value, even when the input voltage is higher than the output voltage."
+
+| Option | Rating | Price | Notes |
+|---|---|---|---|
+| Victron Orion XS 12/12-50A | 50A / 700W | ~$370 | Recommended — VE.Direct joins existing Cerbo GX/VRM dashboard; ~4x headroom over 13A draw |
+| Victron Orion-Tr Smart 12/12-30 (Non-Isol.) | 30A / 360W | ~$215 | Bluetooth only — no Cerbo integration, separate app |
+| SetPower 12V→13.8V regulator | 8A / 110W | ~$40 | Marketed for exactly this problem, but undersized — DMC4101 draws 13A |
+| Generic DROK buck-boost module | varies | ~$40-90 | DIY — no enclosure/fusing/monitoring built in, more effort |
+
+---
+
+##  — Cerbo GX Monitoring in Power Supply Mode — What Actually Changes
+
+Full input/output voltage, current, and power monitoring works in Power Supply mode on the Cerbo/VRM dashboard, same as Charger mode — this is stated plainly in Victron's own Orion XS manual, not mode-gated. Only three things differ from Charger mode:
+
+1. **No DVCC control** — DVCC is Victron's system for the GX device to actively coordinate a *battery charge* profile. Since the Orion XS here feeds the fridge (a load), not a secondary battery, DVCC was never applicable to this use case regardless of mode — nothing is lost.
+
+2. **Network status reads "Standalone" instead of "Slave"** — purely a label reflecting #1, not a loss of visibility.
+
+3. **"Engine shutdown detection" is replaced by "Input voltage lock-out"** — a configurable floor below which the Orion XS shuts its output off entirely, protecting the house battery from being pulled down further by the regulator trying to hold 13.5V out of an already-weak source. Worth setting this a bit above the battery's true "empty" voltage.
+
+---
+
+##  — Behavior When the Battery Is Near Full (14.4-14.5V)
+
+The Orion XS uses the same buck-boost topology in both directions: when input is *below* the 13.5V setpoint, it boosts; when input is *above* the setpoint (e.g. 14.4-14.5V during bulk/absorption charging), it seamlessly bucks (steps down) instead — no user action needed, no mode switch.
+
+Output stays clamped at the set 13.5V the entire time. Per the manual: current draw is limited to the configured maximum regardless of whether input is higher or lower than the output setpoint.
+
+Orion XS 12/12-50A spec: input range **9-17V**, output adjustable **10-17V**, max efficiency **98.5%**. A 14.5V input sits comfortably mid-range on both — well clear of any limit, and buck (step-down) operation is typically at least as efficient as boost, so no meaningful penalty.
+
+**Net effect**: the fridge sees a rock-steady 13.5V whether the house battery is sagging at 11V under compressor load or sitting at 14.5V mid-charge — that consistency, not just avoiding the low end, is the actual point of adding this over wiring the fridge straight to the battery bus.
+
+---
+
 ##  — Sources
 
 [Dometic DMC 4101/4081 Operation Manual (PDF)](https://forestriverinc.com/files/Component-Manuals/Appliance/Dometic%20-%20Refrigerator%20Model%20DMC4101,%20DMC4081%20Operation%20Manual.pdf)
@@ -120,6 +161,14 @@ Not yet confirmed as the cause on this coach, but commonly reported for this mod
 [Dometic refrigerator not cooling — iRV2 Forums](https://www.irv2.com/threads/dometic-refrigerator-not-cooling.2075994/)
 
 [Dometic 12 v fridge — Forest River Forums](https://www.forestriverforums.com/threads/dometic-12-v-fridge.359179/)
+
+[Orion XS 12/12-50A DC-DC battery charger — manual (PDF)](https://www.victronenergy.com/upload/documents/Orion_XS_12-12-50A_DC-DC_battery_charger/124067-Orion_XS_DC-DC_battery_charger-pdf-en.pdf)
+
+[Orion-Tr Smart DC-DC Charger Non-Isolated — Victron Energy](https://www.victronenergy.com/dc-dc-converters/orion-tr-smart-non-isolated)
+
+[Orion XS and Cerbo GX — Victron Community](https://communityarchive.victronenergy.com/questions/271695/orion-xs-and-cerbo-gx.html)
+
+[SetPower DC/DC Converter Regulator 12v to 13.8v 110w — Amazon](https://www.amazon.com/Setpower-Converter-Transformer-Stabilizer-Refrigerator/dp/B0BHY6MFP4)
 
 ---
 
